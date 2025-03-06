@@ -1,0 +1,359 @@
+/* Resetando estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: rgb(255, 99, 71);
+    color: white;
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 150px;
+}
+
+/* Logo do cabeçalho */
+header .logo .logoimg {
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+
+header .logo .logoimg:hover {
+    transform: scale(1.05);
+}
+
+/* Menu de navegação */
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    font-weight: 300;
+}
+
+header nav ul li {
+    margin: -20px 20px;
+    position: relative;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    display: inline-block;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+/* Efeito ao passar o mouse sobre os links */
+header nav ul li a:hover {
+    background-color: #f4f4f4;
+    color: rgb(255, 99, 71);
+    transform: translateY(-5px);
+}
+
+/* Seções */
+section {
+    padding: 4rem 1.5rem;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: rgb(255, 99, 71);
+    font-weight: bold;
+}
+
+section p {
+    font-size: 1.3rem;
+    color: #666;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Carousel */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 100%;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Botões de navegação */
+button {
+    position: absolute;
+    top: 50%;
+    background-color: rgb(255, 99, 71);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 2rem;
+    z-index: 1;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(255, 99, 71);
+    transform: scale(1.1);
+}
+
+button.prev {
+    left: 15px;
+}
+
+button.next {
+    right: 15px;
+}
+
+/* Rodapé */
+footer {
+    background-color: rgb(255, 99, 71);
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 1rem;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.1rem;
+}
+
+footer a:hover {
+    color: #f4f4f4;
+    text-decoration: underline;
+}
+
+/* Estilo da seção História */
+#historia {
+    background-image: url('fundooba.avif');
+    /* Defina o caminho da imagem de fundo */
+    background-size: cover;
+    /* Faz com que a imagem cubra todo o fundo da seção */
+    background-position: center center;
+    /* Alinha a imagem no centro da seção */
+    background-repeat: no-repeat;
+    /* Impede que a imagem se repita */
+    padding: 100px 0;
+    color: #fff;
+    /* Define a cor do texto para garantir legibilidade */
+}
+
+#historia p {
+    text-align: justify;
+    background-color: rgba(244, 244, 244, 0.7);
+    /* Fundo com opacidade para o texto, facilita a leitura */
+    color: #444;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#historia h2 {
+    margin-top: -40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+#Cadastro form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#Cadastro div {
+    margin-bottom: 15px;
+}
+
+#Cadastro label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#Cadastro input,
+#Cadastro textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#Cadastro textarea {
+    resize: vertical;
+}
+
+#Cadastro button {
+    padding: 10px 20px;
+    background-color: rgb(255, 99, 71);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+#Cadastro button:hover {
+    background-color: rgb(255, 69, 0);
+}
+
+
+
+/* Divisões */
+#divisao {
+    background-color: rgb(255, 99, 71);
+    height: 40px;
+}
+
+#divisao h2 {
+    margin-top: -40px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+}
+
+/* Reservas */
+#reservas {
+    background-color: rgb(255, 99, 71);
+    margin-bottom: 40px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333;
+    border-radius: 10px;
+}
+
+#reservas p {
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    transition: all 0.3s ease;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#reservas p:hover {
+    color: #f4f4f4;
+    font-size: 1.5rem;
+    transform: scale(1);
+}
+
+/* Container do carrossel */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 600px;
+    /* Altura menor do carrossel */
+    margin-top: -20px;
+}
+
+/* Carrossel */
+.carousel {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 100%;
+}
+
+/* Slides do carrossel */
+.carousel-slide {
+    display: block;
+    width: 100%;
+    height: 80%;
+    /* Ajustando a altura da imagem */
+    object-fit: cover;
+    /* Garante que a imagem se ajuste sem distorcer */
+    object-position: top center;
+    /* Mover a imagem um pouco para cima */
+}
+
+
+
+/* Botões de navegação */
+button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(255, 99, 71, 0.301);
+    /* Fundo com transparência */
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 2rem;
+    z-index: 1;
+    width: 70px;
+    border-radius: 20%;
+}
+
+button:hover {
+    background-color: rgba(255, 99, 71, 0.664);
+    /* Fundo sólido ao passar o mouse */
+}
+
+button.prev {
+    left: 15px;
+    /* Posiciona o botão "anterior" no lado esquerdo */
+}
+
+button.next {
+    right: 15px;
+    /* Posiciona o botão "próximo" no lado direito */
+}
+
+.botao{
+    display: flex;
+    position: relative;
+}
